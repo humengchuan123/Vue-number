@@ -1,0 +1,85 @@
+{
+  "getNewsList": [
+    {
+      "id": 1,
+      "title": "全国人大会议在京闭幕 习近平发表重要讲话",
+      "url": "http://news.sina.com.cn/china/xlxw/2018-03-20/doc-ifysmqsu4669020.shtml"
+    },
+    {
+      "id": 2,
+      "title": "成都地铁1号线三期要来了 周边公交这样调整",
+      "url": "http://sc.sina.com.cn/news/b/2018-03-14/detail-ifyscsmv4323416.shtml"
+    },
+    {
+      "id": 3,
+      "title": "阿里推“特价版”淘宝 反手狙击拼多多？",
+      "url": "http://tech.sina.com.cn/i/2018-03-20/doc-ifysmnes8671514.shtml"
+    },
+    {
+      "id": 4,
+      "title": "四川新认定5个省级高新技术产业园区",
+      "url": "http://sc.sina.com.cn/news/m/2018-03-14/detail-ifyscsmv4515846.shtml"
+    },
+    {
+       "id": 5,
+       "title": "打发汇会化肥划分",
+       "url": "http://www.baidu.com"
+    },
+    {
+       "id": 6,
+       "title": "打发汇会化肥划分",
+       "url": "http://www.baidu.com"
+    },
+    {
+       "id": 7,
+       "title": "打发汇会化肥划分",
+       "url": "http://www.baidu.com"
+    },
+    {
+       "id": 8,
+       "title": "打发汇会化肥划分",
+       "url": "http://www.baidu.com"
+    }
+  ],
+  "login": {
+    "username": "yudongdong",
+    "userId": 123123
+  },
+  "getPrice": {
+    "amount": 678
+  },
+  "createOrder": {
+    "orderId": "6djk979"
+  },
+  "getOrderList": {
+    "list": [
+      {
+        "orderId": "ddj123",
+        "product": "数据统计",
+        "version": "高级版",
+        "period": "1年",
+        "buyNum": 2,
+        "date": "2016-10-10",
+        "amount": "500元"
+      },
+      {
+        "orderId": "yuj583",
+        "product": "流量分析",
+        "version": "户外版",
+        "period": "3个月",
+        "buyNum": 1,
+        "date": "2016-5-2",
+        "amount": "2200元"
+      },
+      {
+        "orderId": "pmd201",
+        "product": "广告发布",
+        "version": "商铺版",
+        "period": "3年",
+        "buyNum": 12,
+        "date": "2016-8-3",
+        "amount": "7890元"
+      }
+    ]
+  }
+}

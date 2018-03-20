@@ -8,6 +8,7 @@ if (!process.env.NODE_ENV) {
 var opn = require('opn')
 var path = require('path')
 var express = require('express')
+var jsonServer = require('json-server')
 var webpack = require('webpack')
 var proxyMiddleware = require('http-proxy-middleware')
 var webpackConfig = process.env.NODE_ENV === 'testing' || 'production'
@@ -23,6 +24,7 @@ var autoOpenBrowser = !!config.dev.autoOpenBrowser
 var proxyTable = config.dev.proxyTable
 
 var app = express()
+// var jsonServer = new jsonServer()
 var compiler = webpack(webpackConfig)
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
@@ -64,7 +66,16 @@ app.use(hotMiddleware)
 // serve pure static assets
 var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
+var jsonServer = require('json-server')
+var server = jsonServer.create()
+var router = jsonServer.router('db.json')
+var middlewares = jsonServer.defaults()
 
+server.use(middlewares)
+server.use('/api',router)
+server.listen(8088,function () {
+  console.log('JSON Server is running')
+})
 var uri = 'http://localhost:' + port
 
 var _resolve

@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    hello world
+     <div>
+     	
+     </div>
   </div>
 </template>
 
-<script type="text/ecmascript-6">
+<script>
 
 </script>
 
